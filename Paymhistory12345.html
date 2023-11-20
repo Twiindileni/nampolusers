@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Page Title</title>
+    <link rel="icon" type="image/x-icon" href="nampol.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment History</title>
+    <link rel="stylesheet" type="text/css" href="payhistory.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Payment History</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Amount Paid</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Outstanding Amount</th>
+                    <th>Action</th> <!-- New column for the "Pay" button -->
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Populate this tbody section dynamically with actual payment history data -->
+                <tr>
+                    <td>N$100</td>
+                    <td>2023-11-15</td>
+                    <td>14:30</td>
+                    <td>N$900</td>
+                    <td><button onclick="pay(900)">Pay</button></td> <!-- Button with a hypothetical pay function -->
+                </tr>
+                <tr>
+                    <td>N$150</td>
+                    <td>2023-11-20</td>
+                    <td>16:45</td>
+                    <td>N$750</td>
+                    <td><button onclick="pay(750)">Pay</button></td> <!-- Button with a hypothetical pay function -->
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        // Define a hypothetical pay function
+        function pay(amount) {
+            // Implement payment logic here
+
+            // Redirect to a new page after payment
+            window.location.href = "card.html"; // Replace with the actual page URL
+        }
+    </script>
+</body>
+</html>
